@@ -1,7 +1,7 @@
 let moviesList = document.querySelector('.moviesList')
 
 
-fetch(`http://www.omdbapi.com/?s=Ip Man&page=1&apikey=3bf3e15`)
+fetch(`http://www.omdbapi.com/?s=Batman&page=1&apikey=3bf3e15`)
 .then(res=> res.json())
 .then(data=> {
     for(let movie of data.Search){
