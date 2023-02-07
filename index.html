@@ -12,8 +12,10 @@
   <header id="header">
     <a href="#" class="logo">Movie</a>
     <div class="nav">
-      <input type="search" placeholder="Search movies" class="search">
-      <i class="fa-solid fa-magnifying-glass" id="icon"></i>
+      <form action="">
+        <input type="text" placeholder="Search movies" class="search"><button class="poisk" style="display: none;">p</button>
+        <i class="fa-solid fa-magnifying-glass" id="icon"></i>
+      </form>
     </div>
 
 
@@ -28,6 +30,25 @@
 
   </div>
 
+
+  <div class="pagination">
+    <form action="" class="form">
+      <!-- <button class="btn prev"><span><i class="fas fa fa-angle-left"></i>Prev</span></button> -->
+      <button onclick="paginationPage(this)" id="pageBtn" class="acive">1</button>
+      <button onclick="paginationPage(this)" id="pageBtn">2</button>
+      <button onclick="paginationPage(this)" id="pageBtn" class="dot">3</button>
+      <button onclick="paginationPage(this)" id="pageBtn">4</button>
+      <button onclick="paginationPage(this)" id="pageBtn">5</button>
+      <button onclick="paginationPage(this)" id="pageBtn" class="dot">6</button>
+      <button onclick="paginationPage(this)" id="pageBtn">7</button>
+      <!-- <button class="btn next"><span>Next<i class="fas fa fa-angle-right"></i></span></button> -->
+      <button onclick="paginationPage(this)" id="pageBtn">8</button>
+      <button onclick="paginationPage(this)" id="pageBtn">9</button>
+      <button onclick="paginationPage(this)" id="pageBtn">10</button>
+      <button onclick="paginationPage(this)" id="pageBtn">11</button>
+      <button onclick="paginationPage(this)" id="pageBtn">12</button>
+    </form>
+  </div>
 
   <script src="main.js"></script>
 </body>

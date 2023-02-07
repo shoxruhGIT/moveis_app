@@ -8,6 +8,7 @@
 body{
   width: 1320px;
   margin: 0 auto;
+  background: #20b2aa;
 }
 /* -----------------------Header section start--------------------- */
 #header{
@@ -45,7 +46,7 @@ ul a:hover{
 
 }
 .search{
-  position: relative;
+
   width: 300px;
   height: 35px;
   border-radius: 20px;
@@ -57,8 +58,8 @@ ul a:hover{
 }
 #icon{
   position: absolute;
-  left: 430px;
-  top: 30px;
+  left: 405px;
+  top: 32px;
 }
 /* --------------Section start------------- */
 .moviesList{
@@ -98,4 +99,72 @@ img:hover{
   margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+}
+
+#pageBtn{
+  width: 30px;
+}
+h1{
+  margin-bottom: 20px;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+}
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(11, 125, 218);
+  /* min-width: 300px;
+  height: 50px; */
+  border-radius: 50px;
+  background: #fff;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+button{
+  transition: all 0.3s ease;
+}
+button#pageBtn{
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 3px;
+}
+.btn{
+  width: 90px;
+  height: 45px;
+  padding: 0 20px;
+  background: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.prev{
+  border-radius: 25px 5px 5px 25px;
+}
+.next{
+  border-radius: 5px 25px 25px 5px;
+}
+button.dot{
+  font-size: 22px;
+  cursor: default;
+}
+button#pageBtn.active,
+button#pageBtn:hover,
+button.btn:hover{
+  color: #fff;
+  background: #20b2aa;
 }
